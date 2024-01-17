@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Universial Margin and padding defaulted to zero. */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(236, 240, 241, 1);
+}
+/* Body display and color property added */
+
+.mainPage {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  background-color: white;
+  margin: 1.4%;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Mainpage */
+
+.userContent{
+  border-radius: 10px;
+  padding: 1%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userContent h1 {
+  margin: 0% 1% 1% 1%;
+  font-weight: 900;
+  word-spacing: 5px;
+  color: rgba(0, 168, 255, 1);
+}
+
+
+.userContent h4 {
+  font-size: larger;
+}
+
+.userContent p {
+  font-size: larger;
+}
+/* Top container paragraph tag designed with font property. */
+
+.user-input {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+/* User name input section designed */
+
+#nameBox {
+  min-width: 50%;
+  margin: 10px;
+  font-size: large;
+  color: rgba(19, 15, 64, 1);
+  border: 1px solid rgba(19, 15, 64, 1);
+  border-radius: 5px;
+}
+/* User name input area */
+
+#input-enter {
+  background-color: rgba(0, 168, 255, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  min-width: 111px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+button{
+  cursor: pointer;
+}
+
+
+.categoryContent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryContent h1 {
+  margin: 2% 1% 1% 1%;
+  font-weight: 900;
+  word-spacing: 5px;
+  color: rgba(0, 168, 255, 1);
+}
+/* header h1 */
+
+.categoryContent h4 {
+  margin: 1%;
+  padding: 1%;
+  font-size: larger;
+}
+/* header h4 */
+
+.catagory-btn {
+  width: 100%;
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  justify-content: center;
+  gap: 30px 40px;
+}
+/* Catagory btn */
+
+.catagory-btn button {
+  border: 2px solid rgba(0, 168, 255, 1);
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 170, 255, 0.614);
+  padding: 10px;
+  font-size: medium;
+  font-weight: 500;
+  width: 90%;
+}
+
+#input-enter:hover {
+  background-color: rgb(4, 126, 43);
+}
+/* hover effect effect */
+
+.catagory-btn button:hover {
+  background-color: rgb(13, 135, 6);
+  border-color: rgb(6, 180, 6);
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+/* responsive disigning below */
+@media screen and (max-width: 635px) {
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  /* main page*/
+  .mainPage {
+    border: none;
+    margin: 0px;
+    width: 100vw;
+    box-shadow: none;
+  }
+
+  #input-box {
+    min-width: 30%;
+    margin: 5px;
+    padding: 10px;
+    font-size: medium;
+  }
+
+  #input-enter {
+    margin: 5px;
+    padding: 10px;
+    min-width: 111px;
+    font-size: 13px;
+  }
+
+  .catagory-btn {
+    display: grid;
+    grid-template-columns: 169px 169px;
+    row-gap: 20px;
+    column-gap: 0px;
+  }
+
+
+  /*user content part*/
+  
+  .userContent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .userContent h1 {
+    margin: 0% 1% 1% 1%;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: rgba(0, 168, 255, 1);
+  }
+
+  .userContent h4 {
+    margin: 1%;
+    padding: 1%;
+    font-size: larger;
+  }
+
+  .userContent p {
+    font-size: larger;
+    padding: 1%;
+    margin: 1%;
+  }
+
+  .user-input {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .categoryContent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categoryContent h1 {
+    margin: 2% 1% 1% 1%;
+    font-weight: 900;
+    word-spacing: 5px;
+    color: rgba(0, 168, 255, 1);
+  }
+
+  .userContent h4 {
+    margin: 1%;
+    padding: 1%;
+    font-size: larger;
+  }
+
+
+  .catagory-btn button {
+    border: 2px solid rgba(0, 168, 255, 1);
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 170, 255, 0.614);
+    padding: 10px;
+    font-size: medium;
+    font-weight: 500;
+  }
+}

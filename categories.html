@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <link rel="shortcut icon" href="test_book_logo.png" type="image/x-icon" />
+    <!-- logo added to tab -->
+    <link rel="stylesheet" href="categories.css" />
+    <!-- Stylesheet linked -->
+  </head>
+  <body onload="loadQuestions()"> <!-- Onbody question loaded -->
+    <div class="quizpage-container"> <!-- Main container -->
+      <main class="quiz-main-container"> <!-- Main quiz container -->
+        <h1 id="catagory-heading">Catagoty of Questions</h1> <!-- Heading h1 tag -->
+        <div class="socre-board">
+          <div class="time-span">10</div>
+          <div class="score-obtained">Score: <span id="my-score">0</span></div>
+        </div>
+        <div class="question-display-partision">
+          <div class="question-counter"><span id="qstn-sl-count">0</span>/10</div>
+          <div class="question-display-board">Your question will appear here.</div>
+        </div>
+        <div class="choices"> <!-- All four options added below-->
+          <button id="keyAnswer-a" value="a" onclick="checkOptionA()">Option 1</button>
+          <button id="keyAnswer-b" value="b" onclick="checkOptionB()">Option 2</button>
+          <button id="keyAnswer-c" value="c" onclick="checkOptionC()">Option 3</button>
+          <button id="keyAnswer-d" value="d" onclick="checkOptionD()">Option 4</button>
+        </div>
+        <div class="next-qstn">
+          <a href="result_page.html" id="submit-anchor">
+            <button id="submit">Submit</button>
+          </a>
+          <button id="previous-question" onclick="PreviousQuestion()">Previous Question</button>
+          <button id="next-question" onclick="nextQuestion()">Next Question</button>
+          <!-- Previous and next button inserted -->
+        </div>
+      </main>
+    </div>
+    <!-- JS and QnA linked -->
+    <script src="q&a.js"></script>
+    <script src="quizzApp.js"></script>
+  </body>
+</html>

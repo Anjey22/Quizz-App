@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Result</title>
+    <!-- fab-icon added -->
+    <link rel="stylesheet" href="result_page.css" />
+    <!-- CSS linked -->
+  </head>
+  <body onload="loadAllData()">
+    <!-- all data loaded during browser load -->
+    <div class="result-container">
+      <!-- Result container -->
+      <main class="result-mainpage">
+        <!-- main page -->
+        <header class="heading-display">
+          <img src="testbook.png" alt="Test Book Logo" width="100">
+          <h1>Quiz Result</h1> <!-- heading of the page -->
+        </header>
+        <section class="result-description"> <!-- All paragraph added -->
+          <p>
+            Dear <span id="name-display" style="font-size: larger;"> User</span>, Your result is:
+          </p>
+          <p>
+            Total number of questions: <span id="question-counter">10</span>
+          </p>
+          <p>Attempted: <span id="attempted-counter">10</span></p>
+          <p>Correct: <span id="correct-ans-counter">10</span></p>
+          <p>Wrong: <span id="wrong-ans-counter">10</span></p>
+          <p>Skipped: <span id="un-attempted-counter">10</span></p>
+          <p>Percentage: <span id="Percentage-checker">10</span>%</p>
+          <p>Total time taken: <span id="time-counter">100</span> seconds</p>
+        </section>
+        <div class="button-final">
+          <a href="categories.html" onclick="scoreBoardDel()"><button>Start Again</button></a>
+          <a href="quizApp.html" onclick="homePage()"><button>Goto Home</button></a>
+          <!-- Final buttons start again and goto home -->
+        </div>
+      </main>
+    </div>
+    <!-- JS and QnA linked -->
+    <script src="q&a.js"></script>
+    <script src="quizzApp.js"></script>
+  </body>
+</html>

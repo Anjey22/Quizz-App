@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quizApp.css" />
+  </head>
+
+  
+  <body onload="homePage()">
+    <!-- page content-->
+    <div class="mainPage">
+      <main class="userContent">
+        <img class="logo" src="testbook.png" alt="Test Book Logo" width="100px" />
+        <h1>Hello <span id="user-name-here">User</span>!</h1>
+        <h4>Enter Your name to continue the quiz.</h4>
+        <div class="user-input">
+          <input type="text" id="nameBox" placeholder="Enter Your Name Here..."/>
+          <button type="button" id="input-enter" onclick="userData()">Enter</button>
+        </div>
+        <p>You'll have 10 seconds to answer each question.</p>
+      </main>
+      <!--category Content  -->
+      <footer class="categoryContent"> 
+        <h1>Select Catagory</h1>
+        <h4>
+          Each Category consist of 10 Questions.
+        </h4>
+        <!-- Category option-->
+        <div class="catagory-btn"> 
+          <a class="category-1" href="categories.html"><button id="selectionA" onclick="selectA()">Pipe And Cisterns</button></a>
+          <a class="category-2" href="categories.html"><button id="selectionB" onclick="selectB()">Probability</button></a>
+          <a class="category-3" href="categories.html"><button id="selectionc" onclick="selectC()">Problem on Age</button></a>
+          <a class="category-4" href="categories.html"><button id="selectionD" onclick="selectD()">Profit and Loss</button></a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Javascript links -->
+    <script src="q&a.js"></script>
+    <script src="quizzApp.js"></script>
+    
+  </body>
+</html>
